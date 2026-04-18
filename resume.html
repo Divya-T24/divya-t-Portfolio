@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Divya T - Resume</title>
+  <style>
+    body {
+      font-family: 'Inter', Arial, sans-serif;
+      margin: 0;
+      padding: 40px;
+      background: white;
+      color: #1E2230;
+      line-height: 1.6;
+      font-size: 14px;
+    }
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      background: white;
+      padding: 40px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.1);
+    }
+    .header {
+      text-align: center;
+      margin-bottom: 30px;
+      border-bottom: 3px solid #7C6CFF;
+      padding-bottom: 20px;
+    }
+    .name {
+      font-size: 36px;
+      font-weight: bold;
+      color: #7C6CFF;
+      margin: 0;
+      letter-spacing: -1px;
+    }
+    .contact {
+      margin: 15px 0;
+      color: #5B6175;
+      font-size: 16px;
+    }
+    .contact a {
+      color: #7C6CFF;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: 500;
+    }
+    .section {
+      margin-bottom: 30px;
+    }
+    .section-title {
+      font-size: 18px;
+      font-weight: bold;
+      color: #7C6CFF;
+      margin-bottom: 12px;
+      border-bottom: 2px solid #E7E5F4;
+      padding-bottom: 5px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+    .summary {
+      margin-bottom: 20px;
+      text-align: justify;
+      font-size: 16px;
+      line-height: 1.7;
+    }
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 15px;
+      margin-bottom: 20px;
+    }
+    .skill-group {
+      margin-bottom: 10px;
+      padding: 10px;
+      background: #F8F7FC;
+      border-radius: 8px;
+      border-left: 4px solid #7C6CFF;
+    }
+    .skill-group strong {
+      color: #1E2230;
+      display: block;
+      margin-bottom: 5px;
+    }
+    .education-item, .project-item, .cert-item {
+      margin-bottom: 15px;
+      padding: 15px;
+      background: #F8F7FC;
+      border-radius: 8px;
+      border-left: 4px solid #7C6CFF;
+    }
+    .project-title {
+      font-weight: bold;
+      color: #1E2230;
+      font-size: 16px;
+      margin-bottom: 5px;
+    }
+    .project-tech {
+      color: #5B6175;
+      font-style: italic;
+      margin: 5px 0;
+      font-size: 14px;
+    }
+    .project-bullets {
+      margin: 10px 0;
+      padding-left: 20px;
+    }
+    .project-bullets li {
+      margin-bottom: 5px;
+      line-height: 1.6;
+    }
+    .cert-list {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 8px;
+    }
+    .cert-item {
+      padding: 12px;
+      background: #F8F7FC;
+      border-radius: 6px;
+      border-left: 4px solid #7C6CFF;
+      font-size: 14px;
+      line-height: 1.5;
+    }
+    @media print {
+      body {
+        padding: 0;
+        font-size: 12px;
+      }
+      .container {
+        max-width: none;
+        box-shadow: none;
+        padding: 20px;
+      }
+      .header {
+        margin-bottom: 20px;
+      }
+      .name {
+        font-size: 28px;
+      }
+      .contact {
+        font-size: 12px;
+      }
+      .section-title {
+        font-size: 14px;
+      }
+      .summary {
+        font-size: 12px;
+      }
+      .skills-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .skill-group {
+        padding: 5px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1 class="name">Divya T</h1>
+      <div class="contact">
+        Chennai, India | +91 94438 41748 / +91 75400 17300<br>
+        <a href="mailto:divyat25@karunya.edu.in">divyat25@karunya.edu.in</a> |
+        <a href="https://www.linkedin.com/in/divya-t-96b859389" target="_blank">LinkedIn</a> |
+        <a href="https://github.com/Divya-T24" target="_blank">GitHub</a> |
+        <a href="index.html" target="_blank">Portfolio</a>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-title">PROFESSIONAL SUMMARY</div>
+      <p class="summary">
+        Motivated Computer Science student with strong skills in frontend development, full-stack web applications, and AI-based solutions. Experienced in building responsive interfaces, real-time systems, and problem-solving through innovative projects. Passionate about learning modern technologies and contributing to impactful software teams.
+      </p>
+    </div>
+
+    <div class="section">
+      <div class="section-title">TECHNICAL SKILLS</div>
+      <div class="skills-grid">
+        <div class="skill-group">
+          <strong>Languages:</strong> C, Python, JavaScript
+        </div>
+        <div class="skill-group">
+          <strong>Frontend:</strong> HTML5, CSS3, React.js, Tailwind CSS
+        </div>
+        <div class="skill-group">
+          <strong>Backend:</strong> Node.js, Express.js
+        </div>
+        <div class="skill-group">
+          <strong>Databases:</strong> MongoDB, PostgreSQL
+        </div>
+        <div class="skill-group">
+          <strong>Tools:</strong> Git, GitHub, VS Code, Postman
+        </div>
+        <div class="skill-group">
+          <strong>Others:</strong> OpenCV, AI/ML Basics, IoT
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-title">PROJECTS</div>
+
+      <div class="project-item">
+        <div class="project-title">AI-Based Agile Sprint Management System</div>
+        <div class="project-tech">React 19, Vite, Node.js, Express.js, MongoDB, Python Flask, JWT, Socket.io, Tailwind CSS</div>
+        <ul class="project-bullets">
+          <li>Developed AI-driven sprint management platform with smart task assignment and performance dashboards</li>
+          <li>Implemented real-time Kanban board, sprint prediction analytics, and NLP-based standup summarization</li>
+        </ul>
+      </div>
+
+      <div class="project-item">
+        <div class="project-title">EDUASSIST – Accessibility Learning Platform</div>
+        <div class="project-tech">Next.js, JavaScript, Google APIs</div>
+        <ul class="project-bullets">
+          <li>Built inclusive educational platform with text-to-speech, voice navigation, and real-time captions</li>
+          <li>Implemented multilingual support and accessible UI design for diverse user needs</li>
+        </ul>
+      </div>
+
+      <div class="project-item">
+        <div class="project-title">Tracking System – Real-Time People Detection</div>
+        <div class="project-tech">Python, OpenCV, YOLOv8</div>
+        <ul class="project-bullets">
+          <li>Developed computer vision system for multi-person detection and real-time tracking</li>
+          <li>Implemented unique ID assignment, bounding box visualization, and movement monitoring</li>
+        </ul>
+      </div>
+
+      <div class="project-item">
+        <div class="project-title">CAMPUSSYNC – Event Management System</div>
+        <div class="project-tech">Web application with role-based authentication</div>
+        <ul class="project-bullets">
+          <li>Created centralized platform for campus event coordination with admin and student dashboards</li>
+          <li>Implemented participation tracking, event status updates, and registration portal</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-title">EDUCATION</div>
+      <div class="education-item">
+        <strong>Karunya Institute of Technology and Sciences</strong><br>
+        B.Tech in Computer Science Engineering (Pursuing)
+      </div>
+      <div class="education-item">
+        <strong>Nirmala Matha Convent Matric Hr. Sec. School</strong><br>
+        Higher Secondary Certificate (HSC) – 81%
+      </div>
+      <div class="education-item">
+        <strong>ELGI Matric Hr. Sec. School</strong><br>
+        Secondary School Leaving Certificate (SSLC) – 80%
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-title">CERTIFICATIONS</div>
+      <div class="cert-list">
+        <div class="cert-item">Oracle Cloud Infrastructure 2025 Certified AI Foundations Associate</div>
+        <div class="cert-item">Certified Data Analyst – One Roadmap</div>
+        <div class="cert-item">Introduction to IoT and Digital Transformation – Cisco Networking Academy</div>
+        <div class="cert-item">Digital Campus 2.0 on Google Cloud</div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
