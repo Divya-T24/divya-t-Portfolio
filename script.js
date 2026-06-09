@@ -1,4 +1,4 @@
-﻿const cursor = document.querySelector('.cursor-dot');
+const cursor = document.querySelector('.cursor-dot');
 
 const links = document.querySelectorAll(
   'a, .project-actions a, .resume-btn, .nav-link'
