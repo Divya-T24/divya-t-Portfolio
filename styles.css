@@ -239,6 +239,15 @@ body.loaded {
   color: var(--muted);
 }
 
+.hero-signature {
+  margin: 0 0 14px;
+  font-size: 0.88rem;
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+  color: var(--accent-strong);
+  font-weight: 700;
+}
+
 .hero-name {
   margin: 0 0 12px;
   font-size: 0.95rem;
@@ -388,6 +397,22 @@ body.loaded {
   letter-spacing: 0.18em;
   text-transform: uppercase;
   color: var(--muted);
+}
+
+.about-quote {
+  margin: 16px 0 6px;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.35rem;
+  line-height: 1.2;
+  color: var(--text);
+}
+
+.about-quote-source {
+  margin: 0;
+  font-size: 0.92rem;
+  letter-spacing: 0.08em;
+  color: var(--accent-strong);
+  text-transform: uppercase;
 }
 
 .about-copy {
@@ -862,10 +887,28 @@ body.loaded {
 }
 
 .site-footer {
-  margin-top: 36px;
+  margin-top: 44px;
+  padding: 26px 28px;
   text-align: center;
-  color: var(--muted);
+  color: var(--text);
   font-size: 0.95rem;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.72), rgba(245, 241, 241, 0.94));
+  border: 1px solid rgba(143, 116, 121, 0.22);
+  border-top: 4px solid var(--accent-strong);
+  border-radius: 28px;
+  box-shadow: 0 18px 36px rgba(42, 42, 42, 0.08);
+}
+
+.site-footer p {
+  margin: 0;
+}
+
+.site-footer p + p {
+  margin-top: 8px;
+}
+
+.site-footer p:first-child {
+  font-weight: 700;
 }
 
 .cursor-dot {
