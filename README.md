@@ -1,4 +1,5 @@
-Hi!, I'm **Divya T**
+Hi, 
+I'm **Divya T** :)
 ---
 **Computer Science Engineering Student | Frontend Developer | Full Stack Enthusiast**
 ---
