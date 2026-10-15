@@ -146,6 +146,16 @@ body.loaded {
   color: var(--accent-strong);
 }
 
+.nav-link:focus-visible,
+.resume-btn:focus-visible,
+.hero-links a:focus-visible,
+.project-actions a:focus-visible,
+.cert-card:focus-visible,
+.contact-grid a:focus-visible {
+  outline: 3px solid var(--accent-strong);
+  outline-offset: 4px;
+}
+
 /* MOBILE */
 
 @media (max-width: 768px) {
@@ -479,6 +489,7 @@ body.loaded {
 
 .project-card {
   display: block;
+  min-width: 0;
   padding: 48px 42px;
   border-radius: 28px;
   border: 1px solid rgba(42, 42, 42, 0.08);
@@ -571,6 +582,7 @@ body.loaded {
 
 .project-details {
   display: grid;
+  min-width: 0;
   gap: 18px;
 }
 
@@ -610,6 +622,7 @@ body.loaded {
   color: var(--muted);
   line-height: 1.75;
   max-width: 760px;
+  overflow-wrap: anywhere;
 }
 
 .project-meta {
@@ -617,6 +630,7 @@ body.loaded {
   color: var(--text);
   font-size: 0.95rem;
   font-weight: 600;
+  overflow-wrap: anywhere;
 }
 
 .project-details h3 {
@@ -663,6 +677,9 @@ body.loaded {
 
 .project-actions a {
   display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 44px;
   padding: 11px 18px;
   border-radius: 999px;
   border: 1px solid rgba(42, 42, 42, 0.12);
@@ -821,13 +838,16 @@ body.loaded {
 
 .contact-grid {
   display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 220px), 1fr));
   gap: 14px;
-  max-width: 360px;
+  max-width: 760px;
 }
 
 .contact-grid a {
   display: flex;
   align-items: center;
+  min-width: 0;
+  min-height: 58px;
   gap: 14px;
   padding: 16px 20px;
   border-radius: 20px;
@@ -836,6 +856,7 @@ body.loaded {
   color: var(--text);
   text-decoration: none;
   font-weight: 600;
+  overflow-wrap: anywhere;
   transition: transform 0.25s ease, border-color 0.25s ease, background 0.25s ease;
 }
 
@@ -968,9 +989,14 @@ body.loaded {
   border-radius: 50%;
   background: rgba(42, 42, 42, 0.9);
   pointer-events: none;
+  opacity: 0;
   transform: translate(-50%, -50%);
-  transition: transform 0.15s ease, width 0.15s ease, height 0.15s ease, background 0.15s ease;
+  transition: opacity 0.15s ease, transform 0.15s ease, width 0.15s ease, height 0.15s ease, background 0.15s ease;
   z-index: 9999;
+}
+
+.cursor-dot.is-visible {
+  opacity: 1;
 }
 
 .cursor-dot.link-hover {
@@ -1035,19 +1061,13 @@ body.loaded {
     order: 3;
     width: 100%;
     gap: 8px;
-    flex-wrap: nowrap;
-    overflow-x: auto;
+    flex-wrap: wrap;
+    overflow: visible;
     padding: 2px 0 8px;
-    scrollbar-width: none;
-    -webkit-overflow-scrolling: touch;
-  }
-
-  .site-nav::-webkit-scrollbar {
-    display: none;
   }
 
   .nav-link {
-    flex: 0 0 auto;
+    flex: 0 1 auto;
     padding: 7px 11px;
     border-radius: 999px;
     background: rgba(245, 241, 241, 0.72);
@@ -1068,6 +1088,24 @@ body.loaded {
     border-color: var(--accent-strong);
   }
 
+  .project-list {
+    gap: 22px;
+  }
+
+  .project-card {
+    padding: 30px 24px;
+    border-radius: 24px;
+  }
+
+  .project-card-top {
+    flex-wrap: wrap;
+    gap: 10px 14px;
+  }
+
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+
   .site-footer {
     grid-template-columns: 1fr;
     grid-template-rows: none;
@@ -1086,5 +1124,68 @@ body.loaded {
     grid-column: 1;
     grid-row: auto;
     justify-self: center;
+  }
+}
+
+@media (max-width: 420px) {
+  .page-shell {
+    padding-right: 14px;
+    padding-left: 14px;
+  }
+
+  .brand {
+    font-size: 0.94rem;
+    letter-spacing: 0.04em;
+  }
+
+  .resume-btn {
+    padding: 8px 11px;
+  }
+
+  .site-nav {
+    gap: 6px;
+  }
+
+  .nav-link {
+    padding: 7px 9px;
+    font-size: 0.78rem;
+  }
+
+  .project-card {
+    padding: 24px 18px;
+  }
+
+  .project-details h3 {
+    font-size: 1.55rem;
+    overflow-wrap: anywhere;
+  }
+
+  .contact-grid a {
+    padding: 14px 16px;
+  }
+}
+
+@media (hover: none), (pointer: coarse) {
+  body {
+    cursor: auto;
+  }
+
+  .cursor-dot {
+    display: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
   }
 }
