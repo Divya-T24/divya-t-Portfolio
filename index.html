@@ -3,7 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Divya T | Portfolio</title>
+  <title>DIVYA THIRUGNANAM | Portfolio</title>
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700;800&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet" />
@@ -20,20 +21,18 @@
 <body>
   <div class="page-shell">
     <header class="top-bar">
-      <div class="brand"><b>DIVYA T</b></div>
+      <div class="brand"><b>DIVYA THIRUGNANAM</b></div>
 
-      <nav class="site-nav">
-        <a href="#about" class="nav-link active">About</a>
+      <nav class="site-nav" aria-label="Main navigation">
+        <a href="#about" class="nav-link active" aria-current="location">About</a>
         <a href="#skills" class="nav-link">Skills</a>
         <a href="#projects" class="nav-link">Projects</a>
         <a href="#certifications" class="nav-link">Certifications</a>
         <a href="#education" class="nav-link">Education</a>
         <a href="#contact" class="nav-link">Contact</a>
-
-        <span class="nav-indicator"></span>
       </nav>
 
-      <a class="resume-btn" href="DIVYA THIRUGNANAM (1).pdf" target="_blank" rel="noopener noreferrer">Resume</a>
+      <a class="resume-btn" href="DIVYA THIRUGNANAM (1).pdf" target="_blank" rel="noopener noreferrer" aria-label="View resume for DIVYA THIRUGNANAM">Resume</a>
     </header>
 
     <section class="hero">
@@ -53,20 +52,20 @@
         <div class="hero-links">
           <a href="https://github.com/Divya-T24" target="_blank" rel="noopener noreferrer">GitHub</a>
           <a href="https://www.linkedin.com/in/divyathirugnanam" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-          <a href="mailto:divyat25@karunya.edu.in">Email</a>
+          <a href="mailto:divyathirugnanamofficial@gmail.com">Email</a>
         </div>
       </div>
 
       <div class="hero-visual">
         <div class="visual-frame">
-          <img src="Divya T .jpeg" alt="Divya T portrait" />
+          <img src="Divya T .jpeg" alt="Portrait of DIVYA THIRUGNANAM" />
         </div>
         <div class="visual-shape"></div>
       </div>
     </section>
 
     <section id="about" class="section about-section">
-      <div class="section-heading">About</div>
+      <h2 class="section-heading">About</h2>
       <div class="about-layout">
         <div class="about-panel">
           <p class="about-label">ABOUT</p>
@@ -82,7 +81,7 @@
     </section>
 
     <section id="skills" class="section skills-section">
-      <div class="section-heading">Skills</div>
+      <h2 class="section-heading">Skills</h2>
       <div class="skills-wrapper">
         <div class="skill-category">
           <h3>Languages</h3>
@@ -146,122 +145,128 @@
       </div>
     </section>
     <section id="projects" class="section projects-section">
-      <div class="section-heading">Featured Projects</div>
+      <h2 class="section-heading">Featured Projects</h2>
         <div class="project-list">
-          <a class="project-card" href="#">
+          <article class="project-card">
             <div class="project-details">
               <div class="project-card-top">
                 <span class="project-icon project-icon-ai">AI</span>
                 <p class="project-label">In Development</p>
               </div>
-              <h3>Tracking-System</h3>
-              <p class="project-description"> An AI-powered computer vision system developed for real-time object detection and tracking using YOLOv8 and OpenCV. The system identifies objects, maintains unique tracking IDs, analyzes confidence scores, and processes video streams for intelligent monitoring applications. </p> 
+              <h3>AI Object Detection &amp; Tracking System</h3>
+              <p class="project-description">Detects and tracks objects in real time with YOLOv8 and OpenCV, assigning object IDs and analyzing confidence across video streams.</p>
               <p class="project-meta"> Python • OpenCV • YOLOv8 • Computer Vision • React • Backend API </p>
             </div>
-          </a>
-          <a class="project-card" href="#">
+          </article>
+          <article class="project-card">
             <div class="project-details">
               <div class="project-card-top">
                 <span class="project-icon project-icon-campus">CRM</span>
                 <p class="project-label">Improvement Phase</p>
               </div>
               <h3>Enterprise CRM System</h3>
-              <p class="project-description">A full-stack customer relationship management platform designed to manage customers, leads, deals, and business workflows. Includes secure authentication, dashboard-based analytics, and structured data management for efficient business operations.</p>
-              <p class="project-meta">React • Node.js • Express.js • MongoDB • JWT • REST API</p>
+              <p class="project-description">Manages customers, leads, sales pipelines, and user activity through authenticated workflows and dashboard-based business insights.</p>
+              <p class="project-meta">React • Vite • JavaScript • CSS • Node.js • Express.js • MongoDB • Mongoose • JWT • bcryptjs • REST APIs • Recharts</p>
+              <div class="project-actions">
+                <a href="https://github.com/Divya-T24/Enterprise-crm-system" target="_blank" rel="noopener noreferrer" aria-label="View code for Enterprise CRM System">View Code</a>
+              </div>
             </div>
-          </a>
-          <a class="project-card" href="#">
+          </article>
+          <article class="project-card">
             <div class="project-details">
               <div class="project-card-top">
                 <span class="project-icon project-icon-campus">CS</span>
                 <p class="project-label">Enhancement Phase</p>
               </div>
               <h3>CampusSync</h3>
-              <p class="project-description"> A centralized campus event management platform that simplifies event creation, student egistrations, attendance tracking, and participation management. Includes QR-based attendance, role-based workflows, admin dashboards, and event approval systems. </p>
+              <p class="project-description">Manages campus event creation and registration with QR attendance, authentication, and role-based workflows.</p>
               <p class="project-meta"> React • Node.js • Express.js • MongoDB • QR Attendance </p>
             </div>
-          </a>
-          <a class="project-card" href="#">
+          </article>
+          <article class="project-card">
             <div class="project-details">
               <div class="project-card-top">
                 <span class="project-icon project-icon-viz">DA</span>
                 <p class="project-label">Completed</p>
               </div>
-              <h3>Data Analytics Dashboard</h3>
-              <p class="project-description"> A modern analytics dashboard designed to visualize data insights through interactive charts and reports. Provides data monitoring, reporting tools, and an intuitive interface for analyzing information effectively.</p>
-              <p class="project-meta"> React • Node.js • PostgreSQL • Data Visualization </p>
+              <h3>Data Analytics &amp; Business Intelligence Dashboard</h3>
+              <p class="project-description">Builds interactive dashboards to monitor KPIs, visualize data, track business performance, and export reports.</p>
+              <p class="project-meta">React • Vite • JavaScript • Chart.js • CSS • Node.js • Express.js • REST APIs • PostgreSQL</p>
+              <div class="project-actions">
+                <a href="https://github.com/Divya-T24/Data-Analytics" target="_blank" rel="noopener noreferrer" aria-label="View code for Data Analytics and Business Intelligence Dashboard">View Code</a>
+              </div>
             </div>
-          </a>
-          <a class="project-card" href="#">
+          </article>
+          <article class="project-card">
             <div class="project-details">
               <div class="project-card-top">
-                <span class="project-icon project-icon-ai">AI</span>
+                <span class="project-icon project-icon-ai">VA</span>
                 <p class="project-label">Completed</p>
               </div>
-              <h3>Frequency-Domain AI Voice Analyzer</h3>
-              <p class="project-description">A real-time AI-based voice signal analysis system using frequency-domain processing techniques. Implements FFT, PSD, spectrogram analysis, Butterworth filtering, and feature extraction with an interactive GUI. </p>
+              <h3>AI Voice Signal Analyzer</h3>
+              <p class="project-description">Analyzes real-time audio signals using FFT, PSD, spectrograms, Butterworth filtering, and feature extraction.</p>
               <p class="project-meta"> Python • NumPy • SciPy • Matplotlib • Tkinter </p>
             </div>
-          </a>
-          <a class="project-card" href="#">
+          </article>
+          <article class="project-card">
             <div class="project-details">
               <div class="project-card-top">
                 <span class="project-icon project-icon-edu">ED</span>
                 <p class="project-label">Completed</p>
               </div>
               <h3>EDUASSIST</h3>
-              <p class="project-description"> An accessibility-focused education platform designed for inclusive learning. Provides text-to-speech support, voice navigation, multilingual accessibility, and improved digital learning experiences for diverse users.</p>
+              <p class="project-description">Improves inclusive learning with text-to-speech support, voice navigation, and multilingual accessibility for diverse learners.</p>
               <p class="project-meta"> Next.js • JavaScript • Accessibility • Voice UI </p>
             </div>
-          </a>
-          <a class="project-card" href="#">
+          </article>
+          <article class="project-card">
             <div class="project-details">
               <div class="project-card-top">
                 <span class="project-icon project-icon-energy">EV</span>
                 <p class="project-label">Completed</p>
               </div>
               <h3>EnergyViz</h3>
-              <p class="project-description"> A smart energy monitoring dashboard that visualizes appliance-level electricity consumption and usage trends. Provides intuitive analytics and data-driven insights for understanding energy usage patterns. </p>
+              <p class="project-description">Visualizes appliance-level electricity consumption and usage trends to help users understand energy use through data-driven insights.</p>
               <p class="project-meta"> JavaScript • Dashboard Design • Data Visualization </p>
             </div>
-          </a>
-          <a class="project-card" href="#">
+          </article>
+          <article class="project-card">
             <div class="project-details">
               <div class="project-card-top">
                 <span class="project-icon project-icon-clock">DC</span>
                 <p class="project-label">Completed</p>
               </div>
               <h3>Down Counter System</h3>
-              <p class="project-description"> An embedded systems project implementing countdown-based control logic for traffic management and parking coordination. Demonstrates timing accuracy, microcontroller programming, and hardware integration concepts. </p>
+              <p class="project-description">Implements countdown-based control logic for traffic management and parking coordination using timing, microcontroller programming, and hardware integration.</p>
               <p class="project-meta"> Embedded C • Microcontroller • Hardware Integration </p>
             </div>
-          </a>
-          <a class="project-card" href="#">
+          </article>
+          <article class="project-card">
             <div class="project-details">
               <div class="project-card-top">
                 <span class="project-icon project-icon-race">RC</span>
                 <p class="project-label">Completed</p>
               </div>
               <h3>2D Car Racing Game</h3>
-              <p class="project-description"> A terminal-based racing game developed using C language to demonstrate game development fundamentals. Implements collision detection, game loops, obstacle generation, and score progression mechanics. </p>
+              <p class="project-description">Builds a terminal-based racing game in C with collision detection, game loops, obstacle generation, and score progression.</p>
               <p class="project-meta"> C Language • Game Logic • Terminal UI </p>
             </div>
-          </a>
+          </article>
         </div>
       </section>
     <section id="certifications" class="section cert-section">
-      <div class="section-heading">Certifications & Industry Credentials</div>
+      <h2 class="section-heading">Certifications &amp; Industry Credentials</h2>
 	<div class="cert-grid">
 	
 	  <a class="cert-card" href="Oracle .png">
 	    <p class="cert-title">ORACLE CLOUD</p>
-	    <p class="cert-subtitle">AI Foundations Associate</p>
-	    <p class="cert-year">Issued 2026</p>
+	    <p class="cert-subtitle">Cloud Infrastructure 2025 Certified AI Foundations Associate</p>
+	    <p class="cert-year">Issued 2025 • Valid Until 2027</p>
 	  </a>
 	
 	  <a class="cert-card" href="Data Analyst .png">
 	    <p class="cert-title">ONEROADMAP</p>
-	    <p class="cert-subtitle">Data Analyst Professional Program</p>
+	    <p class="cert-subtitle">Data Analyst</p>
 	    <p class="cert-year">Issued 2026</p>
 	  </a>
 	</div>
@@ -271,19 +276,19 @@
 
         <a class="cert-card" href="https://www.credly.com/badges/6419433c-365b-486d-914d-4f347fab44d6" target="_blank" rel="noopener noreferrer">
           <p class="cert-title">GOOGLE CLOUD</p>
-          <p class="cert-subtitle">Cloud Digital Leader</p>
-          <p class="cert-year">Issued 2026 • Valid Until 2029</p>
+          <p class="cert-subtitle">Google Cloud Certified Cloud Digital Leader</p>
+          <p class="cert-year">Issued May 2026 • Valid Until May 2029</p>
         </a>
 
         <a class="cert-card" href="https://www.credly.com/badges/adecfc75-bdbb-48aa-9be5-b668759e47e1" target="_blank" rel="noopener noreferrer">
           <p class="cert-title">RED HAT</p>
-          <p class="cert-subtitle">System Administration I (RH124)</p>
+          <p class="cert-subtitle">System Administration I (RH124 - RHA), Version 10 (Course Attendance)</p>
           <p class="cert-year">Issued 2026</p>
         </a>
 
         <a class="cert-card" href="https://www.credly.com/badges/e85113f6-4914-4fd2-bb0e-3003d85d2dd6" target="_blank" rel="noopener noreferrer">
           <p class="cert-title">CISCO NETWORKING ACADEMY</p>
-          <p class="cert-subtitle">Introduction to Internet of Things</p>
+          <p class="cert-subtitle">Introduction to IoT and Digital Transformation</p>
           <p class="cert-year">Issued 2026</p>
         </a>
 
@@ -295,13 +300,13 @@
       </div>
 		<br>
 		<div class="cert-badge" >
-			<p> 4+ Industry Certifications </p>
-			<span> Google Cloud • Red Hat • Cisco • IBM </span>
+			<p> 6 Industry Credentials </p>
+			<span> Google Cloud • Oracle • OneRoadmap • Red Hat • Cisco • IBM </span>
 		</div>
     </section>
 <br>
     <section id="education" class="section education-section">
-      <div class="section-heading">Education</div>
+      <h2 class="section-heading">Education</h2>
       <div class="education-card">
         <div class="education-item">
           <p class="edu-org">Karunya Institute of Technology and Sciences</p>
@@ -322,14 +327,14 @@
     </section>
 
     <section id="contact" class="section contact-section">
-      <div class="section-heading">Let's Connect</div>
+      <h2 class="section-heading">Let's Connect</h2>
       <div class="contact-grid">
         <a href="mailto:divyathirugnanamofficial@gmail.com" data-icon="✉">Personal Email</a>
         <a href="mailto:divyat25@karunya.edu.in" data-icon="✉">Academic Email</a>
         <a href="https://www.linkedin.com/in/divyathirugnanam" target="_blank" rel="noopener noreferrer" data-icon="in">LinkedIn</a>
         <a href="https://www.credly.com/users/divyathirugnanm/badges" class="credly" target="_blank" rel="noopener noreferrer" data-icon="CR">Credly</a>
         <a href="https://github.com/Divya-T24" class="github" target="_blank" rel="noopener noreferrer" data-icon="GH">GitHub</a>
-        <a href="tel:+919443841748" data-icon="☎">Contact Number</a>
+        <a href="tel:+919443841748" data-icon="☎">Phone: +91 94438 41748</a>
       </div>
       </section>
 
@@ -339,7 +344,7 @@
 		<p>— Matthew 5:16</p>
 		<hr>
         <p><b>Built with curiosity • Gratitude • Faith </b></p>
-		 <p>Designed and developed by <b>Divya T</b></p>
+		 <p>Designed and developed by <b>DIVYA THIRUGNANAM</b></p>
     </footer>
   </div>
   <div class="cursor-dot"></div>

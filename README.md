@@ -1,5 +1,5 @@
 Hi, 
-I'm **Divya T** :)
+I'm **DIVYA THIRUGNANAM** :)
 ---
 **Computer Science Engineering Student | Frontend Developer | Full Stack Enthusiast**
 ---
